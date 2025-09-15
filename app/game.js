@@ -484,17 +484,17 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingVertical: 12,
     paddingHorizontal: 16,
-    minWidth: 100, // 固定最小宽度
+    width: 100, // 固定宽度而不是最小宽度
     alignItems: 'center',
     justifyContent: 'center',
   },
   submitButtonText: {
     fontWeight: 'bold',
     textAlign: 'center',
+    fontSize: 11, // 减小字体以适应固定宽度
   },
   submitButtonTextFixed: {
-    fontSize: 12, // 减小字体大小以适应固定宽度
-    minWidth: 68, // 确保文本区域有固定宽度
+    fontSize: 11, // 统一字体大小
   },
   submitReady: {
     backgroundColor: '#6aaa64',
